@@ -1,5 +1,9 @@
 import BackIcon from 'assets/icons/back-icon.svg?react';
+import MergeIcon from 'assets/icons/merge-icon.svg?react';
+import StartIcon from 'assets/icons/start-icon.svg?react';
+import UpgradeIcon from 'assets/icons/upgrade-icon.svg?react';
 import battery from 'assets/images/battery.png';
+import flash from 'assets/images/flash.png';
 import health from 'assets/images/health.png';
 
 export const Character = () => {
@@ -9,7 +13,7 @@ export const Character = () => {
         <BackIcon />
 
         <div className='w-100 h-[600px] rounded-3xl bg-[#141414] border border-[#313131] mt-10 flex flex-col align-middle px-4 py-3'>
-          <div className='flex flex-row justify-between '>
+          <div className='flex flex-row justify-between mt-2'>
             <span className='text-[#FFF] font-rubik text-[28px] font-medium my-auto ms-2'>PEPE ROOKIE</span>
             <div className='h-[44px] text-[#FFB801] flex justify-center align-middle border border-[#313131]  bg-[#202020] rounded-2xl px-4 py-2'>
               <div>
@@ -24,10 +28,33 @@ export const Character = () => {
             LEVEL 02
           </div>
           <div className='px-2 h-[247px]  mt-2 border border-[#313131]'></div>
-          <div className='grid grid-col-3 gap-3 align-middle h-auto'>
-            {/* <div className='h-25 w-20' style={{ backgroundImage: `url(${health})` }}></div> */}
-            <div className='h-20 w-20' style={{ backgroundImage: `url(${health})` }}></div>
-            <div className='h-20 w-20' style={{ backgroundImage: `url(${battery})` }}></div>
+          <div className='flex flex-col items-center align-middle'>
+            <div className='flex flex-row gap-3  h-auto mt-6'>
+              <div className='-mt-1 flex flex-col'>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${flash})` }}></div>
+                <span className='ps-5 text-[10px] mx-auto'>10%</span>
+              </div>
+              <div className=' flex flex-col'>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${health})` }}></div>
+                <span className='ps-5 text-[10px] mx-auto'>10%</span>
+              </div>
+              <div className=' flex flex-col'>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${battery})` }}></div>
+                <span className='ps-5 text-[10px] mx-auto'>10%</span>
+              </div>
+            </div>
+          </div>
+          <div className='grid grid-cols-2 gap-1 font-rubik mx-auto mt-5 -mb-1'>
+            <MergeIcon
+              className='cursor-pointer'
+              // onClick={() => {
+              //   console.log('merge clicked');
+              // }}
+            />
+            <UpgradeIcon className='cursor-pointer' />
+          </div>
+          <div className='-mb-14 pb-3'>
+            <StartIcon />
           </div>
         </div>
       </div>
