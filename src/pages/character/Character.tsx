@@ -6,7 +6,7 @@ import battery from 'assets/images/battery.png';
 import flash from 'assets/images/flash.png';
 import health from 'assets/images/health.png';
 
-export const Character = () => {
+export function Character() {
   return (
     <div className=' h-screen bg-black pt-6 '>
       <div className='mx-8'>
@@ -27,19 +27,19 @@ export const Character = () => {
           <div className='text-[10px] text-black w-[90px] h-[20px] px-5 ps-6 py-1 bg-[#FFE49F] rounded-md'>
             LEVEL 02
           </div>
-          <div className='px-2 h-[247px]  mt-2 border border-[#313131]'></div>
+          <div className='px-2 h-[247px]  mt-2 border border-[#313131]' />
           <div className='flex flex-col items-center align-middle'>
             <div className='flex flex-row gap-3  h-auto mt-6'>
               <div className='-mt-1 flex flex-col'>
-                <div className='h-20 w-20' style={{ backgroundImage: `url(${flash})` }}></div>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${flash})` }} />
                 <span className='ps-5 text-[10px] mx-auto'>10%</span>
               </div>
               <div className=' flex flex-col'>
-                <div className='h-20 w-20' style={{ backgroundImage: `url(${health})` }}></div>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${health})` }} />
                 <span className='ps-5 text-[10px] mx-auto'>10%</span>
               </div>
               <div className=' flex flex-col'>
-                <div className='h-20 w-20' style={{ backgroundImage: `url(${battery})` }}></div>
+                <div className='h-20 w-20' style={{ backgroundImage: `url(${battery})` }} />
                 <span className='ps-5 text-[10px] mx-auto'>10%</span>
               </div>
             </div>
@@ -60,4 +60,4 @@ export const Character = () => {
       </div>
     </div>
   );
-};
+}

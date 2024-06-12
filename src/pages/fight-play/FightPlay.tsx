@@ -4,7 +4,7 @@ import bearFightImage from 'assets/icons/bear-fight-image.png';
 import defaultProfile from 'assets/icons/defaultProfile.png';
 import flash from 'assets/images/simple-flash.png';
 
-export const FightPlay = () => {
+export function FightPlay() {
   return (
     <div className=' h-screen bg-black pt-6 '>
       <div className='flex flex-col '>
@@ -83,4 +83,4 @@ export const FightPlay = () => {
       </div>
     </div>
   );
-};
+}
