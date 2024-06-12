@@ -7,6 +7,7 @@ import Layout from 'components/layout/layout';
 import ErrorBoundary from 'routes/error-boundary';
 
 import { Character } from 'pages/character/Character';
+import { FightPlay } from 'pages/fight-play/FightPlay';
 import Home from 'pages/home/home';
 import { MainMenu } from 'pages/mainMenu/MainMenu';
 import { StartingFight } from 'pages/starting-fight/StartingFight';
@@ -23,6 +24,7 @@ function AppRoutes() {
         <Route path='meme' element={<MainMenu />} />
         <Route path='character' element={<Character />} />
         <Route path='starting-fight' element={<StartingFight />} />
+        <Route path='fight' element={<FightPlay />} />
         <Route path='/home' element={<Home />} />
 
         <Route path='logout' element={<SignOut />} />

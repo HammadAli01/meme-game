@@ -15,7 +15,7 @@ export const StartingFight = () => {
         <BackIcon />
       </div>
       <div className='py-3 flex flex-col items-center'>
-        <div className='h-[70px] bg-[#141414] rounded-2xl border border-[#313131] flex flex-row justify-between px-3 py-4 w-[410px] '>
+        <div className='h-[70px] bg-[#141414] rounded-t-2xl border border-[#313131] flex flex-row justify-between px-3 py-4 w-[410px] '>
           <div className='flex flex-row'>
             <img src={defaultProfile} className='rounded-md h-[37px] w-[37px]'></img>
             <div className=' justify-centerflex flex-col'>
@@ -57,9 +57,15 @@ export const StartingFight = () => {
             <img src={defaultProfile} className='rounded-md h-[37px] w-[37px] '></img>
           </div>
         </div>
-        <div className=' mt-3 bg-[#141414] pt-7 pb-5 rounded-3xl border border-[#313131]  h-[450px] w-[410px]'>
+        {/* <div className='flex-grow border-t border-gray-300'></div>
+        <div className='mx-4'>vs</div>
+        <div className='flex-grow border-t border-gray-300'></div> */}
+        <div className=' bg-[#141414]  pb-5 rounded-b-3xl border border-[#313131]  h-[450px] w-[410px]'>
+          <div className='-mt-5 mx-auto flex items-center justify-center rounded-full bg-[#141414] text-white w-12 h-12 pb-1'>
+            VS
+          </div>
           <div
-            className='mx-auto w-[344px] h-[210px] rounded-2xl mt-5 border border-[#313131] '
+            className='mt-13 mx-auto w-[344px] h-[210px] rounded-2xl mt-5 border border-[#313131] '
             style={{ backgroundImage: `url(${mainFightBackground})` }}
           >
             <div className='mx-auto mt-3 text-[10px] text-black w-[120px] h-[20px] px-5 ps-6 py-1 bg-[#FFE49F] rounded-md'>
