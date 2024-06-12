@@ -2,7 +2,7 @@ import { Progress } from 'antd';
 
 import flash from 'assets/images/simple-flash.png';
 
-export const FightPlay = () => {
+export function FightPlay() {
   return (
     <div className=' h-screen bg-black pt-6 '>
       <div className='flex flex-col '>
@@ -11,7 +11,7 @@ export const FightPlay = () => {
             <div className='flex flex-row py-2 ps-2'>
               <div className='flex flex-row  w-[160px]'>
                 <span className='text-[#FFF] text-xs '>546.3</span>
-                <img className='-mt-1 h-6 w-6' src={flash}></img>
+                <img className='-mt-1 h-6 w-6' src={flash} alt='img' />
               </div>
               <span className='text-[#FFF] text-xs font-thin'>95%</span>
             </div>
@@ -23,7 +23,7 @@ export const FightPlay = () => {
             <div className='flex flex-row py-2 ps-2'>
               <div className='flex flex-row  w-[160px]'>
                 <span className='text-[#FFF] text-xs '>546.3</span>
-                <img className='-mt-1 h-6 w-6' src={flash}></img>
+                <img className='-mt-1 h-6 w-6' src={flash} alt='img' />
               </div>
               <span className='text-[#FFF] text-xs font-thin'>95%</span>
             </div>
@@ -45,4 +45,4 @@ export const FightPlay = () => {
       </div>
     </div>
   );
-};
+}

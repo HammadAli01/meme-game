@@ -8,7 +8,7 @@ import battery from 'assets/images/simple-battery.png';
 import flash from 'assets/images/simple-flash.png';
 import health from 'assets/images/simple-health.png';
 
-export const StartingFight = () => {
+export function StartingFight() {
   return (
     <div className=' h-screen bg-black pt-6 '>
       <div className='mx-8'>
@@ -17,7 +17,7 @@ export const StartingFight = () => {
       <div className='py-3 flex flex-col items-center'>
         <div className='h-[70px] bg-[#141414] rounded-t-2xl border border-[#313131] flex flex-row justify-between px-3 py-4 w-[410px] '>
           <div className='flex flex-row'>
-            <img src={defaultProfile} className='rounded-md h-[37px] w-[37px]'></img>
+            <img src={defaultProfile} className='rounded-md h-[37px] w-[37px]' alt='profile-img' />
             <div className=' justify-centerflex flex-col'>
               <div className='flex flex-row justify-between w-[102px] align-middle py-2 ps-2'>
                 <span className='text-[#A6A7B0] text-xs '>@asdas</span>
@@ -54,7 +54,7 @@ export const StartingFight = () => {
                 />
               </div>
             </div>
-            <img src={defaultProfile} className='rounded-md h-[37px] w-[37px] '></img>
+            <img src={defaultProfile} className='rounded-md h-[37px] w-[37px] ' alt='img' />
           </div>
         </div>
         {/* <div className='flex-grow border-t border-gray-300'></div>
@@ -114,9 +114,9 @@ export const StartingFight = () => {
               />
             </div>
             <div className=' ms-1 me-1 '>
-              <img className='h-13 mx-auto' src={flash}></img>
-              <img className=' mx-auto' src={battery}></img>
-              <img className=' mt-3 mx-auto' src={health}></img>
+              <img className='h-13 mx-auto' src={flash} alt='img' />
+              <img className=' mx-auto' src={battery} alt='img' />
+              <img className=' mt-3 mx-auto' src={health} alt='img' />
             </div>
             <div className=' flex flex-col -ms-[30%]  font-rubik w-[150px]'>
               <span className='text-xs text-[#A6A7B0] mt-2'>Energy</span>
@@ -157,4 +157,4 @@ export const StartingFight = () => {
       </div>
     </div>
   );
-};
+}

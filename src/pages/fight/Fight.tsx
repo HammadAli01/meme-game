@@ -1,6 +1,6 @@
 import { Progress } from 'antd';
 
-export const Fight = () => {
+export function Fight() {
   return (
     <div className=' h-screen bg-black pt-6 '>
       <div className='flex flex-col '>
@@ -47,4 +47,4 @@ export const Fight = () => {
       </div>
     </div>
   );
-};
+}
